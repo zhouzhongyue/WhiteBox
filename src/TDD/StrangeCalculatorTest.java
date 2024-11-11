@@ -26,6 +26,7 @@ public class StrangeCalculatorTest {
         //大于0的入参
         int input = 1;
         int expected = 0;
+
         //实际计算
         int result = strangeCalculator.calculate(input);
         //断言确认是否减1
@@ -69,15 +70,15 @@ public class StrangeCalculatorTest {
 //        Assertions.assertEquals(expected, result);
 //    }
 //
-//    @Test
-//    @DisplayName("入参大于等于100，计算其减1的值")
-//    public void givenGreaterThanOrEquals100() {
-//        int input = 100;
-//        int expected = 99;
-//        //实际计算
-//        int result = strangeCalculator.calculate(input);
-//        //断言确认是否计算了平方
-//        Assertions.assertEquals(expected, result);
-//    }
+    @Test
+    @DisplayName("入参大于等于100，计算其减1的值")
+    public void givenGreaterThanOrEquals100() {
+        int input = 100;
+        int expected = 99;
+        //实际计算
+        int result = strangeCalculator.calculate(input);
+        //断言确认是否计算了平方
+        Assertions.assertEquals(expected, result);
+    }
 
 }
