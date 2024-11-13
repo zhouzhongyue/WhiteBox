@@ -74,7 +74,7 @@ public class StrangeCalculatorTest {
     @DisplayName("入参大于等于100，计算其减1的值")
     public void givenGreaterThanOrEquals100() {
         int input = 100;
-        int expected = 999;
+        int expected = 9;
         //实际计算
         int result = strangeCalculator.calculate(input);
         //断言确认是否计算了平方
